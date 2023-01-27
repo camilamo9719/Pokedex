@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(237, 238, 242, 0.8), rgba(237, 238, 242, 0.8) ),  url(/src/assets/pokeball.jpg);
+    gap: 30px;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    font-family: inherit;
+    margin-left: 20px;
+}
+input {
+    outline: 0;
+}
+
+.home__body {
+    min-height: calc(100vh - 100px);
+    padding: 5rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home__img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 500px;
+}
+.home-form-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home__title {
+    color: rgba(221, 26, 26, 1);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.home__subtitle {
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.home-form__input {
+    padding: 10px 20px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 1rem;
+    box-shadow: -1px 2px 10px #0004; 
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+.home-form__button {
+    padding: 10px 20px;
+    background-color: rgba(221, 26, 26, 1);
+    font-size: 1rem;
+    cursor: pointer;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+/* Media Querys */
+@media screen and (min-width: 300px) {  
+    .home__img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 300px;
+    }
+
+    .home-form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .home__img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 400px;
+    }
+    .home-form-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home__img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 500px;
+    }
+}
