@@ -95,10 +95,11 @@
     .poke-container {
     grid-template-columns: repeat(2, 330px);
     column-gap: 1.5rem;
+    margin: 1.8rem auto;
     }
 }
 
-@media screen and (min-width: 800px) {  
+@media screen and (min-width: 1000px) {  
     .pokedex-form-container {
         display: flex;
         flex-direction: row;
@@ -121,5 +122,6 @@
     .poke-container {
     grid-template-columns: repeat(3, 330px);
     column-gap: 1.5rem;
+    margin: 1.8rem auto;
     }
 }
